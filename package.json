@@ -3,20 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "server": "node src/server/server.js",
+    "server": "node src/server.js",
     "client": "node src/open.js",
     "dev": "react-scripts start",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "dependencies": {
     "audit": "0.0.6",
+    "babel-preset-react-app": "^3.1.2",
     "fix": "0.0.6",
+    "jquery": "^3.5.1",
     "opn": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
-  }
+    "babel-cli": "^6.26.0",
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0"
+  },
+  "description": "Самостоятельное изучение библиотеки React",
+  "main": "tag.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toshkaexe/my_react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toshkaexe/my_react/issues"
+  },
+  "homepage": "https://github.com/toshkaexe/my_react#readme"
 }
