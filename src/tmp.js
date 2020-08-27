@@ -29,7 +29,7 @@ const sum = (function(){
 })();
 console.log(sum(1,2,3));
 
-
+// ...
 const sumExtended = (function(){
 
     return function sumExtended(...args){
@@ -37,12 +37,37 @@ const sumExtended = (function(){
         return args.reduce((a,b) => a+b, 0);
     };
 })();
-console.log(sumExtended(1,2,3,4,5,6,7,8));
+console.log( "sumExtended = " +  sumExtended(1,2,3,4,5,6,7,8));
 
 
 
 const createPerson = (name, age, gender) => ({name, age, gender});
 
-console.log(createPerson("Yo Hao",56, "male"));
+console.log("createPerson = " + createPerson("Yo Hao", 56, "malle"));
+
+
+//closures
+function createCalcFunction(n){
+return function(){
+    console.log(1000*n)
+}
+}
+
+createCalcFunction(23)
+const calc = createCalcFunction(234)
+console.log("createCalcFuntion: "  +calc())
+
+
+function urlGenerator(domain){
+    return function(url){
+        return `https://${url}.${domain}`
+
+    }
+}
+
+
+const comUrl = urlGenerator('com')
+console.log(comUrl('google'));
+
 
 
