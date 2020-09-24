@@ -64,8 +64,6 @@ function urlGenerator(domain){
 
     }
 }
-
-
 const comUrl = urlGenerator('com')
 console.log(comUrl('google'));
 

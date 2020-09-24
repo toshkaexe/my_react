@@ -8,7 +8,6 @@ function logPerson(){
     console.log(`Person: ${this.name}, ${this.age}, ${this.job} `)
 }
 
-
 function bind(context, fn){
     return function(...args){
         fn.apply(context,args)

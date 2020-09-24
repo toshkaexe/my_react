@@ -54,6 +54,7 @@ const html = templates.join(' ');
 document.querySelector('.list').innerHTML = html ;
 
 
+   
 
 $(document).ready(function(){
  $("#msgid").html("This is Hello World by JQuery");
